@@ -1,3 +1,10 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +43,57 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Carousel CSS */
+
+.carousel{
+  overflow: hidden;
+  width:900px;
+  margin: 30rem auto 0 auto;
+  
+}
+
+.inner{
+  white-space:nowrap;
+  transition: transform 0.5s;
+}
+
+.carousel-item{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: green;
+  color:#fff;
+}
+
+.carousel-grid{
+  /* display: grid; */
+  
+}
+/* .card{
+  display: flex;
+}
+.card-icon{
+  background-color: white;
+  height:50px;
+  width:auto;
+}
+ */
+
+
+.indicators{
+  display: flex;
+  justify-content: center;
+}
+
+.indicators > button{
+  margin:5px;
+}
+
+.indicators > button.active{
+  background-color: green;
+  color:#fff;
+}
+
